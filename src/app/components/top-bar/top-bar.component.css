@@ -1,0 +1,66 @@
+header{ 
+    background-color: orangered;
+    position: fixed;
+    top:1%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+img#menu {
+    margin-left: 30px;
+    width: 60px;
+    height: 60px;      
+}
+p#menuarea{
+    width:240px;
+}
+img#mainlogo {
+    transition: none !important;
+    width: auto !important;
+    height: 120px; 
+    transform: none !important;
+}
+img#instagram{
+    margin-right: 30px;
+    width: 60px;
+    height: 60px; 
+}
+img#facebook{
+    margin-right: 30px;
+    width: 60px;
+    height: 60px; 
+}
+img#contatti{
+    margin-right: 35px;
+    width: 60px;
+    height: 60px; 
+}
+header img:hover{
+    transition: transform .2s;
+    width: 70px;
+    height: 70px;
+    transform: scale(1.5);
+}
+
+/************************************************************************************************************/
+/****************************************** SMALL SCREENS ***************************************************/
+/************************************************************************************************************/
+@media  screen and (max-width: 750px) {
+    header{
+        position: relative;
+        flex-direction: column-reverse;
+    }
+    img#mainlogo {
+        margin-bottom: 15px;
+        width: auto;
+        height: 80px; 
+    }
+    img#contatti{
+        margin-right: 0;
+    }
+    p#menuarea{
+        width: auto;
+    }
+}

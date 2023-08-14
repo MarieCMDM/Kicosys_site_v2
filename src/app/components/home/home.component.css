@@ -1,0 +1,91 @@
+
+
+.terzo{   
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 10%;
+}
+
+.pulsanti{
+    width: 30%;
+    text-align: center;
+    margin: 0%;
+    display: block;
+}
+
+.pulsanti:hover{
+    cursor: pointer;
+}
+
+.icone{
+    width: 90px;
+    margin-top: 50px;
+}
+
+#team{ 
+    width: 47%;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 1%;
+}
+
+#events{
+    align-content: center;
+    width: 47%;
+    text-align: center;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 1%;  
+}
+
+#events:hover{
+    cursor: pointer;
+}
+
+#event{
+    margin: auto;
+    width: fit-content;
+}
+
+.elenco{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+ul {
+    margin-bottom: 5%;
+    align-content: left;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+/************************************************************************************************************/
+/****************************************** SMALL SCREENS ***************************************************/
+/************************************************************************************************************/
+@media  screen and (max-width: 750px) {
+
+/************************ BODY ************************************/
+    section{
+        overflow-x: scroll;
+    }
+    .terzo{
+        display: block;
+    }
+    .pulsanti{
+        width: 100%;
+    }
+    main#team{
+        width: 100%;
+    }
+    main#events{
+        width: 100%;
+    }
+    img#menu{
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>Contatti - KIKOSYS</title>
+    <link rel="stylesheet" href="../css/mariestylemk.css">
+    <script src="../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/Marie_jQuery.js"></script>
+</head>
+
+<body>
+    <header>
+        <p id="menuarea">
+            <a href="../index.html"> <img id="menu" src="../images/home.png" > </a>
+        </p>
+        <img id="mainlogo" src="../images/kicosys_logo_long.png" >
+        <p>
+            <a href="https://www.instagram.com/kicosys/?hl=it"> <img id="instagram" src="../images/instaicon.png"> </a>
+            <a href="https://it-it.facebook.com/Kicosys/"> <img id="facebook" src="../images/fbicon.png"> </a>
+            <a href="./Contatti.html"> <img id="contatti" src="../images/contatti.png">  </a>
+        </p> 
+    </header>
+
+
+        <main id="contatti">
+            <img id="logow" src="../images/kicosys_logo_bianco.png">
+            <h1>CONTATTI</h1>   
+            <p>
+                Ki.Co.Sys.<br>
+                Tel: +39 3392050199<br>
+                E-mail: info@kicosys.it
+            </p>
+            <p>
+                Sede legale:<br>
+                Tricesimo (UD), via Aquileia 10/2
+            </p>
+            <p>
+                Alla pagina "TEST POINT" le prinipali sedi operative dove è possibile trovare un incaricato del Ki.Co.Sys.
+            </p>
+            <p>
+                Puoi inoltre contattarci tramita la pagina Facebook e instagram tramite i pulsanti in alto a destra o con il form di contatto qui sotto.
+            </p>
+        </main>
+
+        <main id="forms">
+                <form>
+                   <label for="name">Nome:</label><br/>
+                   <input type="text" placeholder="Mario">
+                </form>
+                <form>
+                <label for="lastname">Cognome:</label><br/>
+                   <input type="text" placeholder="Rossi">
+                </form>
+                <form>
+                   <label for="email">eMail:</label><br/>
+                   <input type="text" placeholder="example@example.com">
+                </form>
+                <form>
+                   <label for="phone">Disciplina</label><br/>
+                   <select size=1 NAME="giudizio">
+                        <option selected="selected" Value=nessuna>-</option> 
+                        <option value=ciclismo>Ciclismo</option>
+                        <option value=Running>Running</option>
+                        <option value=Crossfit>Crossfit</option>
+                        <option value=Nuoto>Nuoto</option>
+                   </select>​​
+                </form>   
+                <form>
+                    <label>Sesso:</label><br/>
+                    <input type="checkbox"><Label>Maschio</Label>
+                    <input type="checkbox"><label>Femmina</label>
+                    <input type="checkbox"><label>Non binario</label>
+                </form>
+               <form id="txtarea">
+                    <label>Inserisci la tua richiesta:</label><br/>
+                    <textarea id="large" ></textarea>
+                </form>
+                <form>
+                    <input type="submit" id="submit" value="invia la richiesta" >
+                </form>
+       </main>
+
+
+    <div id="up" onclick="backToTop()">
+        <img id="event" src="../images/frecciasu.png">
+        torna su
+    </div>
+
+    <address>
+        <pre>Ki.Co.Sys. di Matteo Chittaro  -  Sede legale: Via Aquileia, 10  Tricesimo (UD)  -  Tel: 0039 3392050199  -  e-mail: info@kicosys.it  -  Codice Fiscale: CHTMTT79L25L483V  -  P.Iva: 02318060304</pre>
+    </address> 
+    
+    <script>
+        function backToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        mybutton = document.getElementById("up");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+            } else {
+            mybutton.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+div#up {
+    /* display: none; */
+	position:fixed;
+    text-align: center;
+	bottom:8%;
+	left:0;
+	width:90px;
+	background-color:orangered;
+    cursor: pointer;    
+	border-radius:15px;
+	margin:5px;
+}
+
+div#up:hover{
+    background:cyan;
+}
+
+
+@media  screen and (max-width: 750px) {
+
+    div#up{
+        display:none !important;
+    }
+}
