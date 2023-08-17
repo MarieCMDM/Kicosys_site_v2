@@ -14,79 +14,7 @@ body {
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 /***************************************** PARTE DEL TITOLO ****************************************************/
-header{
-    position: fixed;
-    top:1%;
-    background-color: orangered;
-    width: 99.5%;
-    z-index: 1;
-}
-div#first{ 
-    display:flex;
-    justify-content: left;
-    align-items: center;
-}
-img#menu {
-    margin-left: 30px;
-    width: 60px;
-    height: 60px;      
-}
-img#mainlogo {
-    transition: none !important;
-    width: auto !important;
-    height: 120px; 
-    transform: none !important;
-}
-img#instagram{
-    margin-right: 30px;
-    width: 60px;
-    height: 60px; 
-}
-img#facebook{
-    margin-right: 30px;
-    width: 60px;
-    height: 60px; 
-}
-img#contatti{
-    margin-right: 35px;
-    width: 60px;
-    height: 60px; 
-}
-nav{
-    align-items: stretch ;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: orangered;
-}
-nav a{
-    padding-top: auto;
-    vertical-align: middle;
-    text-align: center;
-    display: inline-block;
-    border: 3px solid black;
-    width: 15%;   
-}
-nav a:hover{
-    background-color: cyan;
-}
-nav a:link{
-    color: black;
-    text-decoration: none;
-}
-nav a:visited{
-    color: black;
-    text-decoration: none;
-}
-p#menuarea{
-    width:240px;
-}
-header img:hover{
-    transition: transform .2s;
-    width: 70px;
-    height: 70px;
-    transform: scale(1.5);
-}
+
 /***************************************** BODY ****************************************************/
 h1 {
     margin-bottom: 3%;
@@ -109,12 +37,7 @@ main {
     padding: 2%;
     vertical-align: bottom;
 }
-img{
-    margin: auto;
-}
-.curva{
-    width: 40%;;
-}
+
 .elenco {
     margin-top: 5%;
     margin-left: 5%;
@@ -122,15 +45,7 @@ img{
 .left{
     text-align: left;
 }
-ol {
-    margin-bottom: 5%;
-    text-align: left;
-    align-content: left;
-}
-li{
-    text-align: left;
-    margin-bottom: 1%;
-}
+
 div#up {
     display: none;
 	position:fixed;
@@ -154,43 +69,7 @@ address{
     text-align: center;
     background-color: rgba(255,255, 255, 0.85);
 }
-/************************************************************************************************************/
-/****************************************** SMALL SCREENS ***************************************************/
-/************************************************************************************************************/
-@media  screen and (max-width: 750px) {
+/
     
-header{
-    position: relative;    
-}
-img#mainlogo {
-    margin-bottom: 15px;
-    width: auto;
-    height: 80px; 
-}
-img#contatti{
-    margin-right: 0;
-}
-div#first{
-    flex-direction: column-reverse;
-}
-nav{
-    display:block;
-}  
-nav a{
-    width: 100%;
-}
-p#menuarea{
-    width: auto;
-}
-/************************ BODY ************************************/
 
-/***************** PIE' DI PAGINA ***************************/
-    div#up{
-        display: none !important;
-    }
-    address{
-        position: relative;
-        width:100%;
-        text-align: center;
-    }
-}
+/************************ BODY ************************************/

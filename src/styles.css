@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     background: url(./assets/images/bkg.png);
     background-attachment: fixed;
@@ -20,7 +21,24 @@ section {
     
 }
 
-section:hover{
+section:hover {
     border-color: cyan;
 }
 
+
+/************************************************************************************************************/
+/****************************************** SMALL SCREENS ***************************************************/
+/************************************************************************************************************/
+@media  screen and (max-width: 750px) {
+
+/***************** PIE' DI PAGINA ***************************/
+    div#up {
+        display: none !important;
+    }
+
+    address {
+        position: relative;
+        width:100%;
+        text-align: center;
+    }
+}

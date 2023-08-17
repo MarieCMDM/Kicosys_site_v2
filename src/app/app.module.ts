@@ -10,6 +10,15 @@ import { HomeComponent } from './components/home/home.component';
 import { AtletiComponent } from './components/atleti/atleti.component';
 import { TestpointComponent } from './components/testpoint/testpoint.component';
 import { EventsComponent } from './components/events/events.component';
+import { ServiziComponent } from './components/servizi/servizi.component';
+import { BiomeccanicaComponent } from './components/biomeccanica/biomeccanica.component';
+import { PreparazioneComponent } from './components/preparazione/preparazione.component';
+import { ValFunzionaleComponent } from './components/val-funzionale/val-funzionale.component';
+import { ValBaropodometricheComponent } from './components/val-baropodometriche/val-baropodometriche.component';
+import { PlantariComponent } from './components/plantari/plantari.component';
+import { IndoorCyclingComponent } from './components/indoor-cycling/indoor-cycling.component';
+import { FitnessWellnessComponent } from './components/fitness-wellness/fitness-wellness.component';
+import { ContattiComponent } from './components/contatti/contatti.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +29,16 @@ import { EventsComponent } from './components/events/events.component';
     HomeComponent,
     AtletiComponent,
     TestpointComponent,
-    EventsComponent
+    EventsComponent,
+    ServiziComponent,
+    BiomeccanicaComponent,
+    PreparazioneComponent,
+    ValFunzionaleComponent,
+    ValBaropodometricheComponent,
+    PlantariComponent,
+    IndoorCyclingComponent,
+    FitnessWellnessComponent,
+    ContattiComponent
   ],
   imports: [
     BrowserModule,

@@ -3,12 +3,12 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
 ## WHATS NEW
--> implemented home, atleti, test point, eventi pages
+-> implemented all previous project pages
 
 ## TODO
 -> Make pagest start on top
 -> Make back on top button show/hide automatically
--> implement other pages 
+-> Finish Contatti page
 -> implenment kicosys-events part
 
 ## Development server
