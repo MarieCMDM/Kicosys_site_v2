@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,21 +8,23 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+  
+  constructor(private router: Router) { }
+
+  ngOnInit() { //Back on top on new route
+    this.router.events.subscribe((event) => {
+        if (!(event instanceof NavigationEnd)) {
+            return;
+        }
+        window.scrollTo(0, 0)
+    });
+  }
 
   mybutton = document.getElementById("up")!;
-  title = 'Kicosys_site_v2';
+
 
   backToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-
-  scrollFunction() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    this.mybutton.style.display = "block";
-    } else {
-    this.mybutton.style.display = "none";
-    }
-  }
-  
+  }  
 }
